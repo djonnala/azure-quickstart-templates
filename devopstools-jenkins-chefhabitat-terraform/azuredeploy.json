@@ -63,7 +63,7 @@
         },
         "_artifactsLocation": {
             "type": "string",
-            "defaultValue": "",
+            "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/msoss-p1/devopstools-jenkins-chefhabitat-terraform",
             "metadata": {
                 "description": "artifacts Url"
             }
