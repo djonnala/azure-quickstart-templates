@@ -50,7 +50,7 @@
         "kibanaWebUIPassword":{
             "type": "securestring",
             "metadata": {
-                "description": "kibana web ui password"
+                "description": "kibana web ui password, the password should have alphanumeric values only"
             }
         },
         "azureApplicationId": {
