@@ -3,36 +3,27 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "adminUsername": {
-            "value": "adminuser"
+            "value": "GEN-UNIQUE"
         },
-        "authenticationType": {
-            "value": "sshPublicKey"
-        },
-        "password":{
+        "password": {
             "value": "GEN-PASSWORD"
         },
         "sshPublicKey": {
             "value": "GEN-SSH-PUB-KEY"
         },
-        "jenkinsVmSize": {
-            "value": "Standard_DS2_v2"
-        },
-        "buildInstanceVmSize": {
-            "value": "Standard_DS1_v2"
-        },
-        "azureSubscriptionId": {
+        "kibanaWebUIUsername": {
             "value": "GEN-UNIQUE"
+        },
+        "kibanaWebUIPassword": {
+            "value": "GEN-PASSWORD"
         },
         "azureApplicationId": {
-            "value": "GEN-UNIQUE"
+            "value": "GEN-GUID"
         },
         "azureClientSecret": {
             "value": "GEN-UNIQUE"
         },
-        "azureTenantId": {
-            "value": "GEN-UNIQUE"
-        },
-        "_artifactsLocation":{
+        "_artifactsLocation": {
             "value": "https://raw.githubusercontent.com/sysgain/azure-quickstart-templates/msoss-p1/devopstools-jenkins-chefhabitat-terraform"
         }
     }
