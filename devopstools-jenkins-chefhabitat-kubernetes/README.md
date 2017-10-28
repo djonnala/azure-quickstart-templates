@@ -654,7 +654,7 @@ http://&lt;external-ip&gt;:8080/national-parks
 
 3. Click on **&quot;Discover&quot;** from top menu to view the logs.
 
-![alt text](https://github.com/sysgain/azure-quickstart-templates/raw/msoss-p2/devopstools-jenkins-chefhabitat-kubernetes/images/65.png)
+![alt text](https://github.com/sysgain/azure-quickstart-templates/raw/msoss-p2/devopstools-jenkins-chefhabitat-kubernetes/images/65.PNG)
 
 4. By default last 15 min logs will be displayed, you can change it as per log search and also you can set auto refresh time as shown below.
 
