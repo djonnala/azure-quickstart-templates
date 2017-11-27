@@ -519,7 +519,7 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 2. Execute np\_acrimage.sh command using below command
 
-	```sh np\_acrimage.sh &lt;username&gt; &lt;password1&gt;```
+	`sh` `np`\_`acrimage.sh` &lt;`username`&gt; &lt;`password1`&gt;
 
 **NOTE:** password 1 value is copied from previous step. Password 1 value should be one of the password 1 and password 2 but not both.
 
@@ -583,7 +583,7 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 2. Login to Jenkins using private key and execute below command to connect to Kubernetes master instance.
 
-	`ssh -i /var/lib/jenkins/.ssh/id\_rsa &lt;username of kubernetes vm&gt;@&lt;** **Kubernetes master Instance dns name** **&gt;`
+	`ssh -i /var/lib/jenkins/.ssh/id\_rsa` &lt;`username of kubernetes vm`&gt;`@`&lt;`Kubernetes master Instance dns name`&gt;
 
 3. Change to the root user by using the below command:
 
@@ -606,7 +606,7 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 1. Get the External IP of web service in the above picture and access national parks applications in browser as below
 
-http://&lt;external-ip&gt;:8080/national-parks
+	`http://`&lt;`external-ip`&gt;`:8080/national-parks`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/59.png)
 
@@ -620,7 +620,7 @@ http://&lt;external-ip&gt;:8080/national-parks
 
 2. Get Logs of each pod by using below command. Replace podname with exact pod name one at a time.
 
-`**Kubectl logs &lt;podname&gt;**`
+	`Kubectl logs` &lt;`podname`&gt;
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/61.png)
 
