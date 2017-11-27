@@ -342,40 +342,37 @@ After the template has been successfully deployed, log in to the Jenkins server 
 
 8. Open a new browser and enter the Jenkins FQDN with extension 8080, as shown below:
 
-**Eg** : **&lt;jenkinsFQDN&gt;:8080**
+	``**Eg** : **&lt;jenkinsFQDN&gt;:8080**``
 
 9. To unlock the Jenkins server, provide the Initialadminpassword which was retrieved as part of step 7.
 
-10.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/19.png)
 
 
-11. Click on **Install suggested plugins**.
+10. Click on **Install suggested plugins**.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/20.png)
 
-12. Click on **Continue as admin**.
+11. Click on **Continue as admin**.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/21.png)
 
-13. Click on **Start using Jenkins**.
+12. Click on **Start using Jenkins**.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/22.png)
 
-14. We can see the jobs which are created in Jenkins server.
+13. We can see the jobs which are created in Jenkins server.
 
 
 
  ### Jobs
 
- **1.** The following are the jobs that are created in Jenkins.
+ 1. The following are the jobs that are created in Jenkins.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/23.png)
 
- **2.** For the above jobs, we have installed the Kubernetes Continuous Deploy plugins.
-
-
+ 2. For the above jobs, we have installed the Kubernetes Continuous Deploy plugins.
 
   ### Executing the Jobs
 **ELKJob**
