@@ -432,7 +432,7 @@ This job will launch a Virtual Machine Scale set with three application nodes.
 
 To build the National Park application, begin by logging in to the Build Instance using Fully Qualified Domain Name (FQDN) from the output section of the ARM template. (As shown in the solution workflow step at page 22)
 
-1. Switch to the root user using **sudo -i**
+1. Switch to the root user using `sudo -i`
 2. Chef Habitat can be configured using the below command.
 
 	``hab setup``
@@ -505,7 +505,7 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 2. Execute mongodb\_acrimage.sh command using below command
 
-	```sh mongodb\_acrimage.sh &lt;username&gt;&lt;password1&gt;```
+	`sh` `mongodb`\_`acrimage.sh` &lt;`username`&gt;&lt;`password1`&gt;
 
 **NOTE:** password 1 value is copied from previous step. Password 1 value should be one of the password 1 and password 2 but not both.
 
