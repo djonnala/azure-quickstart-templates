@@ -330,11 +330,11 @@ After the template has been successfully deployed, log in to the Jenkins server 
 
 5. Change to the root user by using the below command:
 
-``sudo -i``
+	``sudo -i``
 
 6. Change the directory to **cd /var/lib/jenkins/secrets** and run the below command to get the initial admin password.
 
-**cat initialAdminPassword**
+	``cat initialAdminPassword``
 
 7. Make a note of this value (Password), this credential will be used to login into the Jenkins WEBUI. (as part of step 9)
 
