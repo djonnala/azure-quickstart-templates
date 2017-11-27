@@ -456,28 +456,30 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/36.png)
 
-	`cd MSOSS
-	 git checkout habcode`
+2. Enter the below commands.
+
+	`cd MSOSS`
+	`git checkout habcode`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/37.png)
 
-2. Navigate to the location of the Directory where package plan.sh file is located.
+3. Navigate to the location of the Directory where package plan.sh file is located.
 
 	`cd national-parks-plan-kubernetes`
 
-3. Enter `hab studio enter`
+4. Enter `hab studio enter`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/38.png)
 
-4. Build the Application, using the `Build` Command.
+5. Build the Application, using the `Build` Command.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/39.png)
 
-5. Then exit the hab studio, by entering the `exit` command.
+6. Then exit the hab studio, by entering the `exit` command.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/40.png)
 
-6. Once **build** is successful, a **HART** file will be generated in results Directory.
+7. Once **build** is successful, a **HART** file will be generated in results Directory.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/41.png)
 
