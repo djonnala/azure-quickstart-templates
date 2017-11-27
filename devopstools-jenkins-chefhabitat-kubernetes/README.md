@@ -452,13 +452,12 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 1. Clone the repository from URL **https://github.com/sysgain/MSOSS.git,** from the branch **habcode** using below commands.
 
- `git clone [https://github.com/sysgain/MSOSS.git](https://github.com/sysgain/MSOSS.git) `
+	`git clone` [https://github.com/sysgain/MSOSS.git](https://github.com/sysgain/MSOSS.git)
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/36.png)
 
-	```cd MSOSS
-	git checkout habcode
-	```
+	`cd MSOSS`
+	`git checkout habcode`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/37.png)
 
