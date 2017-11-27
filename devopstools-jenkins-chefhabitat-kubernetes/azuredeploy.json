@@ -20,13 +20,6 @@
                 "description": "azure login password"
             }
         },
-        "authenticationType": {
-            "type": "string",
-            "defaultValue": "sshPublicKey",
-            "metadata": {
-                "description": "authenticationType for virtula machines"
-            }
-        },
         "sshPublicKey": {
             "type": "string",
             "metadata": {
@@ -153,7 +146,7 @@
             "password": "[parameters('adminPassword')]",
             "kibanaWebUIUsername":"[parameters('kibanaWebUIUsername')]",
             "kibanaWebUIPassword":"[parameters('kibanaWebUIPassword')]",
-            "authenticationType": "[parameters('authenticationType')]",
+            "authenticationType": "[variables('authenticationType')]",
             "sshPublicKey": "[parameters('sshPublicKey')]",
             "jenkinsVmSize": "[parameters('jenkinsVmSize')]",
             "ubuntuSku": "16.04-LTS",
@@ -177,7 +170,7 @@
             "buildInstanceNicName": "build-nic",
             "buildInstanceVmName": "buildinstance",
             "adminUsername": "[parameters('adminUsername')]",
-            "authenticationType": "[parameters('authenticationType')]",
+            "authenticationType": "[variables('authenticationType')]",
             "sshPublicKey": "[parameters('sshPublicKey')]",
             "buildInstanceVmSize": "[parameters('buildInstanceVmSize')]",
             "ubuntuSku": "16.04-LTS",
@@ -194,6 +187,7 @@
             "AzurePassword": "[parameters('AzurePassword')]",
             "containerRegistry": "[concat(variables('containerRegistry'),variables('suffix'))]"
         },
+        "authenticationType":"sshPublicKey",
         "resourceGroupName": "[resourceGroup().name]",
         "kubernetesDnsPrefix": "kub",
         "containerRegistry": "osscr",
