@@ -342,7 +342,7 @@ After the template has been successfully deployed, log in to the Jenkins server 
 
 8. Open a new browser and enter the Jenkins FQDN with extension 8080, as shown below:
 
-	``**Eg** : **&lt;jenkinsFQDN&gt;:8080**``
+	**Eg** : **&lt;jenkinsFQDN&gt;:8080**
 
 9. To unlock the Jenkins server, provide the Initialadminpassword which was retrieved as part of step 7.
 
@@ -433,7 +433,9 @@ This job will launch a Virtual Machine Scale set with three application nodes.
 To build the National Park application, begin by logging in to the Build Instance using Fully Qualified Domain Name (FQDN) from the output section of the ARM template. (As shown in the solution workflow step at page 22)
 
 1. Switch to the root user using **sudo -i**
-2. Chef Habitat can be configured using the command _&quot;_ **hab setup** _&quot;._
+2. Chef Habitat can be configured using the below command.
+
+	``hab setup``
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/34.png)
 
@@ -450,13 +452,13 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 1. Clone the repository from URL **https://github.com/sysgain/MSOSS.git,** from the branch **habcode** using below commands.
 
-**git clone** [https://github.com/sysgain/MSOSS.git](https://github.com/sysgain/MSOSS.git)
+	``git clone [https://github.com/sysgain/MSOSS.git](https://github.com/sysgain/MSOSS.git)``
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/36.png)
 
-**cd MSOSS**
+	``cd MSOSS``
 
-**git checkout habcode**
+	``git checkout habcode``
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/37.png)
 
