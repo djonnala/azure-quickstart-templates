@@ -342,7 +342,7 @@ After the template has been successfully deployed, log in to the Jenkins server 
 
 8. Open a new browser and enter the Jenkins FQDN with extension 8080, as shown below:
 
-	``Eg : &lt;jenkinsFQDN&gt;:8080``
+	``Eg : **&lt;jenkinsFQDN&gt;:8080**``
 
 9. To unlock the Jenkins server, provide the Initialadminpassword which was retrieved as part of step 7.
 
