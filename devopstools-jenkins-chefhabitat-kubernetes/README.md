@@ -58,14 +58,15 @@
 
 ## Solution Architecture:
 
+This Solution will be helpfull to deploy an application using the integration of Jenkins, Chef Habitat and Kubernates.
+
 This solution will deploy the following architecture:
 
 ### Virtual Network with four subnets:
 
 - Subnet1 – Jenkins server, Build instance with Chef Habitat
-- Subnet2 – VM scale set
+- Subnet2 – Kubernates
 - Subnet3 – Elastic Stack
-- Subnet4 – MongoDB
 
 1. Azure Load Balancer
 2. Azure Storage Account
