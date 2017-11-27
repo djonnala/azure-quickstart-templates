@@ -456,9 +456,8 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/36.png)
 
-	``cd MSOSS``
-
-	``git checkout habcode``
+	``cd MSOSS
+	git checkout habcode``
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/37.png)
 
