@@ -456,24 +456,24 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/36.png)
 
-	`cd MSOSS`
-	`git checkout habcode`
+	`cd MSOSS
+	 git checkout habcode`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/37.png)
 
 2. Navigate to the location of the Directory where package plan.sh file is located.
 
-**cd national-parks-plan-kubernetes**
+	`cd national-parks-plan-kubernetes`
 
-3. Enter &quot; **hab studio enter** _&quot;_
+3. Enter `hab studio enter`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/38.png)
 
-4. Build the Application, using the &quot; **Build**&quot; Command.
+4. Build the Application, using the `Build` Command.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/39.png)
 
-5. Then exit the hab studio, by entering the **exit** command.
+5. Then exit the hab studio, by entering the `exit` command.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/40.png)
 
@@ -484,25 +484,25 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 ### Get Azure Container Registry Password from Azure portal
 
-**1.**  Login to Azure Portal   [https://portal.azure.com/](https://portal.azure.com/) .On the home page on left side menu click on more services and search for container registries
+1. Login to Azure Portal   [https://portal.azure.com/](https://portal.azure.com/) .On the home page on left side menu click on more services and search for container registries
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/42.png)
 
-**2.** Click on **Available azure container registries** **resource** and click on  **Access Keys**
+2. Click on **Available azure container registries** **resource** and click on  **Access Keys**
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/43.png)
 
-**3.** Be handy with username, password 1 and password 2 for further deployments
+3. Be handy with username, password 1 and password 2 for further deployments
 
 ### Uploading MongoDB HART file to Azure Container Registry:
 
-Change directory to **/scripts** by using below command
+Change directory to `/scripts` by using below command
 
-cd /scripts/
+`cd /scripts/`
 
 Execute mongodb\_acrimage.sh command using below command
 
- sh mongodb\_acrimage.sh &lt;username&gt;&lt;password1&gt;
+`sh mongodb\_acrimage.sh &lt;username&gt;&lt;password1&gt;`
 
 **NOTE:** password 1 value is copied from previous step. Password 1 value should be one of the password 1 and password 2 but not both.
 
@@ -510,13 +510,13 @@ Execute mongodb\_acrimage.sh command using below command
 
   ### Uploading National parks HART File to the Azure Container Registry:
 
-Change directory to **/scripts** by using below command
+Change directory to `/scripts` by using below command.
 
-**cd /scripts**
+`cd /scripts`
 
 Execute np\_acrimage.sh command using below command
 
-sh np\_acrimage.sh &lt;username&gt; &lt;password1&gt;
+`sh np\_acrimage.sh &lt;username&gt; &lt;password1&gt;`
 
 **NOTE:** password 1 value is copied from previous step. Password 1 value should be one of the password 1 and password 2 but not both.
 
@@ -524,11 +524,11 @@ sh np\_acrimage.sh &lt;username&gt; &lt;password1&gt;
 
 ##  Verify Docker Images in Azure Container Registry:
 
-**1.** Login to Azure Portal   [https://portal.azure.com/](https://portal.azure.com/) .On the home page on left side menu click on more services and search for container registries
+1. Login to Azure Portal   [https://portal.azure.com/](https://portal.azure.com/) .On the home page on left side menu click on more services and search for container registries
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/46.png)
 
-**2.** Click on **Available azure container registries** **resource** and click on **Repositories**
+2. Click on **Available azure container registries** **resource** and click on **Repositories**
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/47.png)
 
@@ -576,26 +576,26 @@ sh np\_acrimage.sh &lt;username&gt; &lt;password1&gt;
 
 ## Verify Kubernetes Pods and Services:
 
-**1.** Get the DNS of Jenkins server and Kubernetes master Instances from Azure portal
+1. Get the DNS of Jenkins server and Kubernetes master Instances from Azure portal
 
-**2.** Login to Jenkins using private key and execute below command to connect to Kubernetes master instance.
+2. Login to Jenkins using private key and execute below command to connect to Kubernetes master instance.
 
-**ssh -i /var/lib/jenkins/.ssh/id\_rsa &lt;username of kubernetes vm&gt;@&lt;** **Kubernetes master Instance dns name** **&gt;**
+	`ssh -i /var/lib/jenkins/.ssh/id\_rsa &lt;username of kubernetes vm&gt;@&lt;** **Kubernetes master Instance dns name** **&gt;`
 
-**3.** Change to the root user by using the below command:
+3. Change to the root user by using the below command:
 
-**sudo -i**
+	`sudo -i`
 
-**4.**  Verify Kubernetes pods using below command
+4.  Verify Kubernetes pods using below command
 
-**Kubectl get pods**
+	`Kubectl get pods`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/57.png)
 
 
-**5.** Verify kubernetes service using below command
+5. Verify kubernetes service using below command
 
-**Kubectl get svc**
+	`Kubectl get svc`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/58.png)
 
@@ -611,13 +611,13 @@ http://&lt;external-ip&gt;:8080/national-parks
 
 1. Get pod details by running command below command
 
-  **Kubectl get pods**
+	`Kubectl get pods`
 
   ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/60.png)
 
 2. Get Logs of each pod by using below command. Replace podname with exact pod name one at a time.
 
-**Kubectl logs &lt;podname&gt;**
+`**Kubectl logs &lt;podname&gt;**`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/61.png)
 
