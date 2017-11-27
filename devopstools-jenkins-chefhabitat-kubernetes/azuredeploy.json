@@ -11,13 +11,13 @@
         "azureUsername": {
             "type": "string",
             "metadata": {
-                "description": "azure login name"
+                "description": "azure portal login username"
             }
         },
         "azurePassword": {
             "type": "securestring",
             "metadata": {
-                "description": "azure login password"
+                "description": "azure portal login password"
             }
         },
         "sshPublicKey": {
@@ -36,14 +36,14 @@
             "type": "string",
             "defaultValue": "Standard_DS2_v2",
             "metadata": {
-                "description": "vm size"
+                "description": "vm size of jenkins server"
             }
         },
         "buildInstanceVmSize": {
             "type": "string",
             "defaultValue": "Standard_DS1_v2",
             "metadata": {
-                "description": "vm size"
+                "description": "vm size of build instance"
             }
         },
         "kibanaWebUIUsername":{
@@ -61,7 +61,7 @@
         "azureApplicationId": {
             "type": "string",
             "metadata": {
-                "description": "ad application ad"
+                "description": "ad application id"
             }
         },
         "azureClientSecret": {
@@ -87,7 +87,7 @@
             "type": "string",
             "defaultValue": "Standard_DS1_v2",
             "metadata": {
-                "description": "Size of Agent VM"
+                "description": "size of agent vm"
             }
         },
         "masterCount": {
@@ -101,7 +101,7 @@
             "type": "string",
             "defaultValue": "Standard_DS1_v2",
             "metadata": {
-                "description": "size of master vM"
+                "description": "size of master vm"
             }
         },
         "_artifactsLocation": {
@@ -122,7 +122,6 @@
     "variables": {
         "networkSettings": {
             "location": "[variables('location')]",
-            "networkApiVersion": "2016-03-30",
             "virtualNetworkName": "OSS",
             "addressPrefix": "10.0.0.0/16",
             "subnet1Name": "Jenkins",

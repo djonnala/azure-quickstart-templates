@@ -228,22 +228,9 @@ Habitat is a first of its kind open source project that offers an entirely new a
 
   ### Generate your SSH key:
 
-PuTTYgen is a key generator tool for creating  [SSH keys](https://www.ssh.com/ssh/key/) for  [PuTTY](https://www.ssh.com/ssh/putty/download).
+Please follow the below link generate SSH public and private keys.
 
-1. PuTTYgen is normally installed as part of the normal PuTTY .msi package installation. There is no need for a separate PuTTYgen download. Download PuTTY from the  [**PuTTY download page**](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
-2. Go to Windows  **Start menu**  →  **All Programs**  →  **PuTTY** →  **PuTTYgen** to generate an SSH key.
-
-![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/4.png)
-
-3. Click  **Generate** , and start moving the mouse within the window. Putty uses mouse movements to collect randomness. You may need to move the mouse for some time, depending on the size of your key. As you move it, the green progress bar should advance.
-
-![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/5.png)
-
-4. Once the progress bar becomes full, the actual key generation computation takes place. When complete, the public key should appear in the Window.
-5. Copy the Public Key in a notepad. This will be used while deploying the ARM Template.
-6. You should save at the private key by clicking  **Save private key** , this private key will be used to log in to the Jenkins server.
-
-![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/6.png)
+![alt text](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#create-an-ssh-key-pair)
 
  ### Create Service principal
 
@@ -309,7 +296,7 @@ The ARM template will deploy the following resources on Azure:
 
 ## Solution Workflow:
 
-After the template has been successfully deployed, log in to the Jenkins server with its Fully Qualified Domain Name (FQDN) provided in the output section, along with the private SSH key and username.
+After the template has been successfully deployed, login in to the Jenkins server with its Fully Qualified Domain Name (FQDN).
 
 1. Open PuTTY and enter the Jenkins FQDN under **Session**.
 
