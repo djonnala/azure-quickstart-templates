@@ -228,9 +228,9 @@ Habitat is a first of its kind open source project that offers an entirely new a
 
   ### Generate your SSH key:
 
-Please follow the below link generate SSH public and private keys.
+Please follow the below link to generate SSH public and private keys.
 
-![alt text](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#create-an-ssh-key-pair)
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#create-an-ssh-key-pair
 
  ### Create Service principal
 
@@ -240,7 +240,7 @@ You can create a service principal within the Azure Portal via  [Azure Cloud She
 
 **1.** Please follow the below link to create Service principal. (Create a service principal with a password)
 
-![alt text](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest#create-a-service-principal-for-your-application)
+https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest#create-a-service-principal-for-your-application 
 
 **2.** Note the values for  **appId** and **password(ClientSecret)** for the parameters section.
 
