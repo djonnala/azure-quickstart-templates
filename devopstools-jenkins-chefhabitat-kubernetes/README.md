@@ -190,8 +190,6 @@ This is because in Habitat, the application is the unit of automation.  This mea
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/3.png)  
 
 
-
-
   ### Habitat Components:
 
 **Habitat Supervisor:**
@@ -228,7 +226,7 @@ Habitat is a first of its kind open source project that offers an entirely new a
 
   ### Generate your SSH key:
 
-Please follow the below link to generate SSH public and private keys.
+Follow the below link to generate SSH public and private keys.
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#create-an-ssh-key-pair
 
@@ -238,43 +236,25 @@ To deploy the ARM template, you need to create a service principal to deploy the
 
 You can create a service principal within the Azure Portal via  [Azure Cloud Shell](https://azure.microsoft.com/en-us/features/cloud-shell/). The AD identity running this installation should have the  **Owner**  role on the required Subscription.
 
-**1.** Please follow the below link to create Service principal. (Create a service principal with a password)
+1. Follow the below link to create Service principal. (Create a service principal with a password)
 
 https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest#create-a-service-principal-for-your-application 
 
-**2.** Note the values for  **appId** and **password(ClientSecret)** for the parameters section.
+2. Note the values for  **appId** and **password(ClientSecret)** for the parameters section.
 
 ## Deploy the ARM Template:
 
-1. Take the main-template from the provided GitHub URL.
-2. Log in to your Azure portal using your credentials
-3. Click on **New (+)** and search for **Template deployment** , then click on it.
+1. Click on **Deploy to azure** button at the top of the documentation.
 
-![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/7.png)
-
-4. Click on **Create.**
-
-![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/8.png)
-
-5. Click on **Build your own template in the editor**.
-
-![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/9.png)
-
-6. Clear the default template section, paste the template from the GitHub and click on **Save**.
-
-![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/10.png)
-
-7. Enter the detailsfor **Admin username,Azure Username, Azure Password,Admin password(for ELK and VMSS VM's) SSH Public key (Generated in prerequisites section),Kibana Username, kibana password then provide Application Id, Client Secret (Password) which is Created in prerequisites section, Kubernetes cluster name, Agent count, master count, leave atifactsLocationSasToken as an empty** in Custom Deployment and click on **Purchase**.
+2. Enter the details for **Admin username,Azure Username, Azure Password,Admin password(for ELK and VMSS VM's) SSH Public key (Generated in prerequisites section),Kibana Username, kibana password then provide Application Id, Client Secret (Password) which is Created in prerequisites section, Kubernetes cluster name, Agent count, master count, leave atifactsLocationSasToken as an empty** in Custom Deployment and click on **Purchase**.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/11.png)
 
-8. The below screen shot shows that the template has been successfully deployed.
+3. The below screen shot shows that the template has been successfully deployed.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/12.png)
 
-
-
-9. We can view the output section as shown below.
+4. We can view the output section as shown below.
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/13.png)
 
