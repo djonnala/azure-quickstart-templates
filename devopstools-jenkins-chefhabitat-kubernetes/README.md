@@ -459,6 +459,7 @@ To build the National Park application, begin by logging in to the Build Instanc
 2. Enter the below commands.
 
 	`cd MSOSS`
+
 	`git checkout habcode`
 
 ![alt text](https://github.com/Azure/azure-quickstart-templates/raw/master/devopstools-jenkins-chefhabitat-kubernetes/images/37.png)
@@ -498,13 +499,13 @@ To build the National Park application, begin by logging in to the Build Instanc
 
 ### Uploading MongoDB HART file to Azure Container Registry:
 
-Change directory to `/scripts` by using below command
+1. Change directory to /scripts by using below command
 
-`cd /scripts/`
+	`cd /scripts/`
 
-Execute mongodb\_acrimage.sh command using below command
+2. Execute mongodb\_acrimage.sh command using below command
 
-`sh mongodb\_acrimage.sh &lt;username&gt;&lt;password1&gt;`
+	```sh mongodb\_acrimage.sh &lt;username&gt;&lt;password1&gt;```
 
 **NOTE:** password 1 value is copied from previous step. Password 1 value should be one of the password 1 and password 2 but not both.
 
@@ -512,13 +513,13 @@ Execute mongodb\_acrimage.sh command using below command
 
   ### Uploading National parks HART File to the Azure Container Registry:
 
-Change directory to `/scripts` by using below command.
+1. Change directory to /scripts by using below command.
 
-`cd /scripts`
+	`cd /scripts`
 
-Execute np\_acrimage.sh command using below command
+2. Execute np\_acrimage.sh command using below command
 
-`sh np\_acrimage.sh &lt;username&gt; &lt;password1&gt;`
+	```sh np\_acrimage.sh &lt;username&gt; &lt;password1&gt;```
 
 **NOTE:** password 1 value is copied from previous step. Password 1 value should be one of the password 1 and password 2 but not both.
 
